@@ -10,7 +10,11 @@ const connectToDb = async () => {
 
   const client = new MongoClient(connectionString);
   await client.connect();
-  database = client.db(process.env.MONGODB_DB_NAME || 'practice');
+  const dbName = process.env.MONGODB_DB_NAME;
+    if (!dbName) {
+        throw new Error('MONGODB_DB_NAME is required.');
+    }
+  database = client.db(dbName);
   return database;
 };
 
