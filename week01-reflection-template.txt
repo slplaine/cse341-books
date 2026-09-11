@@ -1,0 +1,58 @@
+# Week 01 Reflection
+
+1. Include a link to one of your Pull Requests (PRs) at GitHub. (It should be merged and closed at this point.)
+
+GitHub Pull Request Link: https://github.com/slplaine/cse341-books/pull/7
+
+2. Include a link to one of your Issues at GitHub. (It should be closed at this point.)
+
+GitHub Issue Link: https://github.com/slplaine/cse341-books/issues/3
+
+3. Which issue took more or less time than expected? Why?
+
+Answer:
+Issue #3 took a little more time than I expected.
+I needed extra time to understand how to retrieve one book by id and return the correct status codes.
+I also spent time testing different cases, such as a valid id and an invalid id, 
+to make sure the API returned the correct responses.
+
+4. Include a link to your walk-though video. (It must include your name, show your web service working at Render, explain the way your `Get Single Book` controller works, and discuss status codes.):
+
+Video link: https://www.loom.com/share/080fb9b642124def9e1be0c38d8c5df4
+
+5.a. Include a GitHub link to a file that shows how your app uses sensitive data, such as the MongoDB connection string.
+
+GitHub link: https://github.com/slplaine/cse341-books/blob/main/src/db/connect.js
+
+5.b. How did you store sensitive data? Why is that approach important?
+
+Answer:
+I stored sensitive data using environment variables, such as MONGODB_URI and MONGODB_DB_NAME.
+This approach is important because it keeps database credentials out of the source
+code and GitHub repository. It helps protect sensitive information and makes the 
+application more secure.
+
+
+6.a. Include a GitHub link to a file that shows one other implementation decision you made.
+
+GitHub link: https://github.com/slplaine/cse341-books/blob/main/src/controllers/books.js
+
+6.b. What decision does this file show, and why did you make that choice?
+
+Answer:
+This file shows my decision to handle different outcomes by returning appropriate HTTP status
+codes and JSON responses.
+I chose this approach to make the API easier to use and understand. 
+The controller returns status code 200 when a book is found, 404 when a book is not found,
+and 500 for unexpected errors. This helps clients understand the result of each request 
+and provides safe error messages.
+
+7. What is one specific habit or process you will work on for next week?
+
+Answer:
+Next week, I will follow the development process carefully. 
+I will start by creating a detailed specification, 
+then prepare a clear plan by breaking the work into smaller tasks. 
+After that, I will implement and test each task step by step. 
+Finally, I will reflect on the results and what I learned. 
+Following these steps will help me stay organized and complete projects more efficiently.
