@@ -1,0 +1,41 @@
+# Week 02 Reflection
+
+## Links
+
+1. Provide your walk-through video link. This video must demonstrate your API working at Render and follow the script in the assignment.
+Video link: https://www.loom.com/share/1e64b54d8c154e2696bbc9d42af5d717
+
+2. Provide a link to your deployed Render api-docs URL:
+Render link: https://cse341-books-55mg.onrender.com/api-docs
+
+3. Provide links to your Pull Requests (they should be merged at this point):
+Books PR: https://github.com/slplaine/cse341-books/pull/11
+Authors PR: https://github.com/slplaine/cse341-books/pull/10
+
+4. Provide links to your GitHub Issues (they should be closed at this point).
+Books Issue: https://github.com/slplaine/cse341-books/issues/8
+Authors Issue: https://github.com/slplaine/cse341-books/issues/9
+
+## Plan vs. Implementation
+
+5. Which part of the work took more or less time than expected? Why?
+
+Answer: The part that took more time than expected was configuring and testing the API documentation with Swagger. 
+I had to make sure all routes were properly documented, generate the Swagger JSON file, 
+and verify that everything worked correctly both locally and on Render. 
+The implementation of the API routes was easier because I followed the same patterns for models, 
+controllers, and routes.
+
+6. How did Swagger help you in your work this week?
+
+Answer: Swagger helped me test and validate all API routes in one place. 
+It made it easier to send requests, check response codes, and verify that the API behaved as expected. 
+It also helped me create clear and organized documentation for the Books and Authors APIs.
+
+## Week 03 Improvement
+
+7. What is one specific habit or process you will apply next week?
+
+Answer:Next week I will test my work more frequently throughout the development process instead of waiting until the end. 
+This will help me find problems earlier and make debugging easier. 
+I will also keep my API documentation updated as I implement new features.
